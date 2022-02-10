@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\MyProfile;
+use App\Http\Controllers\Blog;
+use App\Http\Controllers\Faq;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +32,11 @@ Route::get('/posts/{post}', function ($post) {
     ]);
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WelcomeController::class, 'show']);
+Route::get('/myprofile', [MyProfile::class, 'show']);
+Route::get('/blog', [Blog::class, 'show']);
+Route::get('/myprofile', [MyProfile::class, 'show']);
+Route::get('/faq', [MyProfile::class, 'show']);
+Route::get('/ictart', [MyProfile::class, 'show']);
+Route::get('/dashboard', [MyProfile::class, 'show']);
+

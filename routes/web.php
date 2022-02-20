@@ -36,7 +36,7 @@ Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/myprofile', [MyProfile::class, 'show']);
 Route::get('/blog', [Blog::class, 'show']);
 Route::get('/myprofile', [MyProfile::class, 'show']);
-Route::get('/faq', [MyProfile::class, 'show']);
+Route::get('/faq', [Faq::class, 'show']); // faq view
 Route::get('/ictart', [MyProfile::class, 'show']);
 Route::get('/dashboard', [MyProfile::class, 'show']);
 

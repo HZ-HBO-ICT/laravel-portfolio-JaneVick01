@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 class Faq
 {
     public function show() {
-        return view( 'faq');
+        return view( 'faq', [
+            'faq' => Faq::all()
+        ]);
     }
 }

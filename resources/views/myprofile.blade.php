@@ -21,8 +21,8 @@
     </a>
     <!-- Right-aligned links -->
     <div class="mytopnav-right">
-        <a href="/index">Home</a>
-        <a href="/myprofile" class="active">My profile</a>
+        <a href="/">Home</a>
+        <a href="/myprofile" class=""{{ Request::path() === '/myprofile' ? 'active' : '' }}"">My profile</a>
         <a href="/dashboard">Dashboard</a>
         <a href="/faq">FAQ</a>
         <a href="/blog">Blog</a>

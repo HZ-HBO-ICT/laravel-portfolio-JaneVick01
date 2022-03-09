@@ -13,6 +13,7 @@
 
 <body class="bimage">
 <!-- Top navigation -->
+
 <div class="mytopnav">
     <a class="navbar-brand" href="https://hz.nl/">
         <div class="logo-image">

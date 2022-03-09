@@ -14,9 +14,8 @@
 
 <body class="bimage">
 <!-- Top navigation -->
-<div class="mytopnav">
     @yield('content')
-</div>
+
 
 <header>
     <img src="/images/pxl.jpg" width="1520" height="500" class="landfoto" alt="Mountain landscape">

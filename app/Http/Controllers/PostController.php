@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use App\Article;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -22,5 +24,9 @@ class PostController extends Controller
         if(! $post) {
             abort(404);
         }
+    }
+    public function index()
+    {
+        return view('......', ['articles' => Article::all(),]);
     }
 }

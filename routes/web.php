@@ -6,6 +6,7 @@ use App\Http\Controllers\Blog;
 use App\Http\Controllers\Faq;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +31,15 @@ Route::get('/posts/{post}', function ($post) {
     return view('post', [
         'post' => $posts[$post]
     ]);
+});
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/', function () {
+
+    return view('/', [
+        'articles' => App\Models\Article::all()
+        ]);
 });
 
 Route::get('/', [WelcomeController::class, 'show']);

@@ -31,12 +31,9 @@
     <div class="mytext">
         <div class="container-articles">
             <article>
-                <p class="subtitle">The ICT field suits me because...</p>
-                <p>
-                    I was always intrigued by the IT world. I will try my best to succeed in this programme even though I am a
-                    beginner.
-                    To be honest I tried coding a few easy applications for fun and just to get a glimpse of what awaits me.
-                </p>
+
+                <p class="subtitle"></p>
+                <p></p>
                 <ul>
                     <p class="subtitle">What I have learned so far:</p>
                     <li>HTML</li>
@@ -46,24 +43,18 @@
             </article>
 
             <article>
-                <p class="subtitle">The HBO-ICT programme suits me because...</p>
-                <p>
-                    Nowadays people use information technology everyday. The demand for this programme is high and it piqued my
-                    interest.
-                    I am willing to spend time and work on my current goal, which is to graduate from HZ university.
-                </p>
+                @foreach($articles as $article)
+                <p class="subtitle">{{ $article->title }}</p>
+                <p> {{ $article->body }} </p>
+                @endforeach
             </article>
 
             <article class="article3">
                 <h5 class="subtitle line">My motivation</h5>
-                </br>
-                <p>
-                    My motivation mostly comes from the feeling of gratification after I successfully solve a problem.
-                    Although I believe that motivation is more about having good discipline and good discipline is intertwined
-                    with
-                    good time management. I like working on different projects and I think that there is so much freedom of
-                    what you can do with ICT. That is precisely why chose ICT.
-                </p>
+                <p>My motivation mostly comes from the feeling of gratification after I successfully solve a problem.
+                    Although I believe that motivation is more about having good discipline and good discipline is
+                    intertwined with good time management. I like working on different projects and I think that there
+                    is so much freedom of what you can do with ICT. That is precisely why chose ICT.</p>
             </article>
         </div>
     </div>

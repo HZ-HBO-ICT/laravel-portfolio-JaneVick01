@@ -19,7 +19,6 @@
             <img src="/images/hz.jfif" class="scale-down">
         </div>
     </a>
-    <!-- Right-aligned links -->
     <div class="mytopnav-right">
         <a href="/">Home</a>
         <a href="/myprofile">My profile</a>
@@ -28,12 +27,35 @@
         <a href="/blog" class="active">Blog</a>
     </div>
 </div>
-
-
-<body>
-<iframe src="https://www.bachelorstudies.com/article/what-is-ict-and-why-should-you-be-interested/" height="800px"
-        width="100%" title="ICT article">
-</iframe>
+</br>
+</br>
+</br>
+<main class="generaltext">
+    <div class="container-articles-general">
+        <p class="blog-h">Exalogic</p>
+        <p>
+            Exalogic is a company founded in 2004 that sells a programme called Oberon on platform Microsoft Windows.
+            Oberon is a complex and modern accounting software.
+            Oberon besides accounting has stock, cash register, hotel reception, CRM, wages, attendance.
+            Programme is best suited for small or medium companies.
+            They work with Visual Basic, C#, Html, SQL.
+        </p>
+        <p>IT roles:</p>
+        <ul>
+            <li>UX engineer</li>
+            <li>Data miner</li>
+            <li>Software Developer</li>
+            <li>E-shop designer</li>
+        </ul>
+        <div class="center">
+            <img src="/images/logooberon.png" width="500" height="150" class="blogimage" alt="oberon logo">
+        </div>
+        </br>
+</main>
+</div>
+</br>
+</br>
+</br>
 <footer>
     Author: Viktória Žiaková
 </footer>

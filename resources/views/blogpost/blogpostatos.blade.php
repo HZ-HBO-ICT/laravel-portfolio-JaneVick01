@@ -19,7 +19,6 @@
             <img src="/images/hz.jfif" class="scale-down">
         </div>
     </a>
-    <!-- Right-aligned links -->
     <div class="mytopnav-right">
         <a href="/">Home</a>
         <a href="/myprofile">My profile</a>
@@ -28,12 +27,32 @@
         <a href="/blog" class="active">Blog</a>
     </div>
 </div>
-
-
-<body>
-<iframe src="https://www.bachelorstudies.com/article/what-is-ict-and-why-should-you-be-interested/" height="800px"
-        width="100%" title="ICT article">
-</iframe>
+</br>
+</br>
+</br>
+<main class="generaltext">
+    <div class="container-articles-general">
+        <p class="blog-h">Atos</p>
+        <p>
+            Atos is the global leader in secure and decarbonized digital with a range of market-leading digital
+            solutions along with consultancy services, digital security and decarbonization offerings; an end-to-end
+            partnership approach.
+        </p>
+        <p>IT roles:</p>
+        <ul>
+            <li>Big data specialist</li>
+            <li>Data scientist</li>
+            <li>Security engineer</li>
+        </ul>
+        <div class="center">
+            <img src="/images/atos.png" width="300" height="200" class="blogimage" alt="atos logo">
+        </div>
+        </br>
+</main>
+</div>
+</br>
+</br>
+</br>
 <footer>
     Author: Viktória Žiaková
 </footer>

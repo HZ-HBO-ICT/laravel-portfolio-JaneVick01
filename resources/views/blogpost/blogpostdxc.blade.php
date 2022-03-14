@@ -19,7 +19,6 @@
             <img src="/images/hz.jfif" class="scale-down">
         </div>
     </a>
-    <!-- Right-aligned links -->
     <div class="mytopnav-right">
         <a href="/">Home</a>
         <a href="/myprofile">My profile</a>
@@ -28,12 +27,34 @@
         <a href="/blog" class="active">Blog</a>
     </div>
 </div>
+</br>
+</br>
+</br>
+<main class="generaltext">
+    <div class="container-articles-general">
+        <p class="blog-h">DXC Technology</p>
 
-
-<body>
-<iframe src="https://www.bachelorstudies.com/article/what-is-ict-and-why-should-you-be-interested/" height="800px"
-        width="100%" title="ICT article">
-</iframe>
+        <p>
+            DXC Technology is also short for Delivering Excellence for their Customers. It is an American multinational
+            corporation that provides business-to-business information technology services.
+            Their main focus is based on outsourcing consulting and managed services.
+        </p>
+        <p>IT roles:</p>
+        <ul>
+            <li>System engineer</li>
+            <li>Private cloud engineer</li>
+            <li>Big data specialist</li>
+            <li>Network engineer</li>
+        </ul>
+        <div class="center">
+            <img src="/images/dxc.jpg" width="400" height="200" class="blogimage" alt="dxc logo">
+        </div>
+        </br>
+</main>
+</div>
+</br>
+</br>
+</br>
 <footer>
     Author: Viktória Žiaková
 </footer>

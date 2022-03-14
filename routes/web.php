@@ -4,6 +4,9 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\MyProfile;
 use App\Http\Controllers\Blog;
 use App\Http\Controllers\Faq;
+use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\Ictart;
+use App\Http\Controllers\BlogPostAcc;
 use Illuminate\Support\Facades\Route;
 
 
@@ -45,8 +48,13 @@ Route::get('/', function () {
 Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/myprofile', [MyProfile::class, 'show']);
 Route::get('/blog', [Blog::class, 'show']);
-Route::get('/myprofile', [MyProfile::class, 'show']);
 Route::get('/faq', [Faq::class, 'show']); // faq view
-Route::get('/ictart', [MyProfile::class, 'show']);
-Route::get('/dashboard', [MyProfile::class, 'show']);
+Route::get('/ictart', [Ictart::class, 'show']);
+Route::get('/dashboard', [Dashboard::class, 'show']);
+Route::get('/blogpostacc', [BlogPostAcc::class, 'show']);
+Route::get('/blogpostatos', [\App\Http\Controllers\BlogPostAtos::class, 'show']);
+Route::get('/blogpostdxc', [\App\Http\Controllers\BlogPostDxc::class, 'show']);
+Route::get('/blogpostexa', [\App\Http\Controllers\BlogPostExa::class, 'show']);
+Route::get('/blogpostgoogle', [\App\Http\Controllers\BlogPostGoogle::class, 'show']);
+Route::get('/blogpostoracle', [\App\Http\Controllers\BlogPostOracle::class, 'show']);
 

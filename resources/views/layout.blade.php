@@ -21,7 +21,7 @@
     <img src="/images/pxl.jpg" width="1520" height="500" class="landfoto" alt="Mountain landscape">
 </header>
 <div class="indexprofile">
-    <a href="http://localhost/myprofile.html">
+    <a href="/myprofile">
         <img src="/images/src.jpg" width="200" height="250" class="profile" alt="My face">
     </a>
 </div>

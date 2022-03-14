@@ -38,14 +38,12 @@
             </br>
             </br>
             <ul>
-                    @foreach($faq as $faqItem)
-                        <li>{{$faqItem->column_name}}</li>
-                @endforeach
-{{--                <p class="subtitle line">1. How can you print a document from your laptop at HZ?</p>--}}
-{{--                </br>--}}
-{{--                <li>Go to http://print.hz.nl then you can log in and upload the specific file that you want to print.--}}
-{{--                    Next go to any printer at school, use your HZ card and you are ready to print.</li>--}}
-{{--                </br>--}}
+                        <li></li>
+                <p class="subtitle line">1. How can you print a document from your laptop at HZ?</p>
+               </br>
+               <li>Go to http://print.hz.nl then you can log in and upload the specific file that you want to print.
+                    Next go to any printer at school, use your HZ card and you are ready to print.</li>
+                </br>
             </ul>
             <p class="subtitle line">2. How can you scan a document a send it to your laptop at HZ?</p>
             </br>

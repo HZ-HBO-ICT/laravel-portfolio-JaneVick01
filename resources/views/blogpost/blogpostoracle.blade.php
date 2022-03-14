@@ -19,7 +19,6 @@
             <img src="/images/hz.jfif" class="scale-down">
         </div>
     </a>
-    <!-- Right-aligned links -->
     <div class="mytopnav-right">
         <a href="/">Home</a>
         <a href="/myprofile">My profile</a>
@@ -28,12 +27,34 @@
         <a href="/blog" class="active">Blog</a>
     </div>
 </div>
-
-
-<body>
-<iframe src="https://www.bachelorstudies.com/article/what-is-ict-and-why-should-you-be-interested/" height="800px"
-        width="100%" title="ICT article">
-</iframe>
+</br>
+</br>
+</br>
+<main class="generaltext">
+    <div class="container-articles-general">
+        <p class="blog-h">Oracle</p>
+        <p>
+            Oracle is a fully scalable relational database architecture
+            and is often used by global enterprises, which manage
+            and process data across wide and local area networks.
+            They work with Visual basic, Java, C/C++, PL/SQL, COBOL.
+        </p>
+        <p>IT roles:</p>
+        <ul>
+            <li>Applications Developer</li>
+            <li>Machine Learning Engineer</li>
+            <li>Software Developer</li>
+            <li>Security Engineer</li>
+        </ul>
+        <div class="center">
+            <img src="/images/oracle.png" width="400" height="200" class="blogimage" alt="oracle logo">
+        </div>
+        </br>
+</main>
+</div>
+</br>
+</br>
+</br>
 <footer>
     Author: Viktória Žiaková
 </footer>

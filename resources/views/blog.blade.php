@@ -107,7 +107,7 @@
         <p class="line">My thoughts</p>
         <ul>
             <li>
-                I like to recieve feedback, it allows me to grow and improve.
+                I like to receive feedback, it allows me to grow and improve.
                 Everyone makes mistakes. I believe that allows us to learn what not to do and move on.
             </li>
         </ul>
@@ -117,31 +117,31 @@
         </br>
         </br>
         <div class="center">
-            <a href="/blogpost/blogpostacc.html">
+            <a href="/blogpostacc">
                 <img src="/images/accenture.png" width="250" height="250" class="blogimage" alt="accenture logo">
             </a>
         </div>
         <div class="center">
-            <a href="/blogpost/blogpostdxc.html">
+            <a href="/blogpostdxc">
                 <img src="/images/dxc.jpg" width="400" height="200" class="blogimage" alt="dxc logo">
             </a>
         </div>
         <div class="center">
-            <a href="/blogpost/blogpostatos.html">
+            <a href="/blogpostatos">
                 <img src="/images/atos.png" width="300" height="200" class="blogimage" alt="atos logo">
             </a>
             <div class="center">
-                <a href="/blogpost/blogpostgoogle.html">
+                <a href="/blogpostgoogle">
                     <img src="/images/google.jpg" width="400" height="200" class="blogimage" alt="google logo">
                 </a>
             </div>
             <div class="center">
-                <a href="/blogpost/blogpostoracle.html">
+                <a href="/blogpostoracle">
                     <img src="/images/oracle.png" width="400" height="200" class="blogimage" alt="oracle logo">
                 </a>
             </div>
             <div class="center">
-                <a href="/blogpost/blogpostexa.html">
+                <a href="/blogpostexa">
                     <img src="/images/logooberon.png" width="500" height="150" class="blogimage" alt="oberon logo">
                 </a>
             </div>

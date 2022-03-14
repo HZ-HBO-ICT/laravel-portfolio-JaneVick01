@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-class Faq
+class BlogPostGoogle
 {
     public function show() {
-        return view( 'faq');
+        return view('/blogpost/blogpostgoogle');
     }
 }

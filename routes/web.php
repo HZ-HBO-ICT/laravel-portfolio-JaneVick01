@@ -45,6 +45,7 @@ Route::get('/', function () {
         ]);
 });
 
+Route::get('/articles/{article}', [\App\Http\Controllers\ArticlesController::class, 'show']);
 Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/myprofile', [MyProfile::class, 'show']);
 Route::get('/blog', [Blog::class, 'show']);

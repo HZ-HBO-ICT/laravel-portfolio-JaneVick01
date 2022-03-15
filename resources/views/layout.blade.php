@@ -44,7 +44,7 @@
 
             <article>
                 @foreach($articles as $article)
-                <p class="subtitle">{{ $article->title }}</p>
+                    <p class="subtitle"><a href="/articles/{{ $article->id }}">{{$article->id}} </a>{{ $article->title }} </p>
                 <p> {{ $article->body }} </p>
                 @endforeach
             </article>

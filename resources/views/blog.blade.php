@@ -141,7 +141,7 @@
                 </a>
             </div>
             <div class="center">
-                <a href="/blogpostexa">
+                <a href="/blogpostexa ">
                     <img src="/images/logooberon.png" width="500" height="150" class="blogimage" alt="oberon logo">
                 </a>
             </div>

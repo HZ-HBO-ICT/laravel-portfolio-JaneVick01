@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,21 +17,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/posts/{post}', function ($post) {
-    $posts = [
-        'my-first-post' => 'Hello, this is my first blog post!',
-        'my-second-post' => 'Now I am getting the hang of this blogging thing.'
-    ];
+// this controls all routes like below see 1
 
-    if (!array_key_exists($post, $posts)) {
-        abort(404, 'Sorry, that post was not found.');
-    }
+Route::resources([
+    'faq' => FaqController::class,
+]);
 
-    return view('post', [
-        'post' => $posts[$post]
-    ]);
-});
+// 1
+//Route::get('/faq', [FaqController::class, 'index']);
+//Route::get('/faq/create', [FaqController::class, 'create']);
+//Route::post('/faq', [FaqController::class, 'store']);
+//Route::get('/faq/{id}', [FaqController::class, 'show']);
+//Route::get('/faq/{id}/edit', [FaqController::class, 'edit']);
+//Route::get('/faq/{id}', [FaqController::class, 'update']);
+//Route::get('/faq/{id}', [FaqController::class, 'destroy']);
+
+Route::get('/blog', [BlogController::class, 'index']);
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect( '/welcome');
 });
+
+Route::get('/{page}', [WelcomeController::class, 'show']);
+
+

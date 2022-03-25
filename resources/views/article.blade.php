@@ -20,7 +20,7 @@
     <div class="mytext">
         <div class="container-articles">
             <article>
-                @foreach($articles as $article)
+                @foreach($article as $article)
                     <p class="subtitle">{{ $article->title }}</p>
                     <p> {{ $article->body }} </p>
                 @endforeach

@@ -12,55 +12,25 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body class="bimage">
 <!-- Top navigation -->
-    @yield('content')
-
-
-<header>
-    <img src="/images/pxl.jpg" width="1520" height="500" class="landfoto" alt="Mountain landscape">
-</header>
-<div class="indexprofile">
-    <a href="/myprofile">
-        <img src="/images/src.jpg" width="200" height="250" class="profile" alt="My face">
-    </a>
-</div>
-
-<main class="generaltext">
-
-    <div class="mytext">
-        <div class="container-articles">
-            <article>
-
-                <p class="subtitle"></p>
-                <p></p>
-                <ul>
-                    <p class="subtitle">What I have learned so far:</p>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li><a target="_blank" href="https://github.com/">Git</a></li>
-                </ul>
-            </article>
-
-            <article>
-                @foreach($articles as $article)
-                    <p class="subtitle"><a href="/articles/{{ $article->id }}">{{$article->id}} </a>{{ $article->title }} </p>
-                <p> {{ $article->body }} </p>
-                @endforeach
-            </article>
-
-            <article class="article3">
-                <h5 class="subtitle line">My motivation</h5>
-                <p>My motivation mostly comes from the feeling of gratification after I successfully solve a problem.
-                    Although I believe that motivation is more about having good discipline and good discipline is
-                    intertwined with good time management. I like working on different projects and I think that there
-                    is so much freedom of what you can do with ICT. That is precisely why chose ICT.</p>
-            </article>
+<div class="mytopnav">
+    <a class="navbar-brand" href="https://hz.nl/">
+        <div class="logo-image">
+            <img src="/images/hz.jfif" class="scale-down">
         </div>
+    </a>
+    <div class="mytopnav-right">
+        <a href="/" class="{{ Request::path() === '/' ? 'active' : '' }}">Home</a>
+        <a href="/myprofile" class="{{ Request::path() === '/myprofile' ? 'active' : '' }}">My profile</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog">Blog</a>
     </div>
-</main>
-</br>
+</div>
+<body class="bimage">
+    @yield('content')
+</body>
 <footer>
     Author: Viktória Žiaková
 </footer>
-</body>
+

@@ -1,12 +1,8 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\MyProfile;
-use App\Http\Controllers\Blog;
-use App\Http\Controllers\Faq;
-use App\Http\Controllers\Dashboard;
-use App\Http\Controllers\Ictart;
-use App\Http\Controllers\BlogPostAcc;
 use Illuminate\Support\Facades\Route;
 
 
@@ -21,41 +17,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/posts/{post}', function ($post) {
-    $posts = [
-        'my-first-post' => 'Hello, this is my first blog post!',
-        'my-second-post' => 'Now I am getting the hang of this blogging thing.'
-    ];
+// this controls all routes like below see 1
 
-    if (!array_key_exists($post, $posts)) {
-        abort(404, 'Sorry, that post was not found.');
-    }
+Route::resources([
+    'faq' => FaqController::class,
+]);
 
-    return view('post', [
-        'post' => $posts[$post]
-    ]);
-});
+// 1
+//Route::get('/faq', [FaqController::class, 'index']);
+//Route::get('/faq/create', [FaqController::class, 'create']);
+//Route::post('/faq', [FaqController::class, 'store']);
+//Route::get('/faq/{id}', [FaqController::class, 'show']);
+//Route::get('/faq/{id}/edit', [FaqController::class, 'edit']);
+//Route::get('/faq/{id}', [FaqController::class, 'update']);
+//Route::get('/faq/{id}', [FaqController::class, 'destroy']);
+
+Route::get('/blog', [BlogController::class, 'index']);
+
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/', function () {
-
-    return view('/', [
-        'articles' => App\Models\Article::all()
-        ]);
+    return redirect( '/welcome');
 });
 
-Route::get('/articles/{article}', [\App\Http\Controllers\ArticlesController::class, 'show']);
-Route::get('/', [WelcomeController::class, 'show']);
-Route::get('/myprofile', [MyProfile::class, 'show']);
-Route::get('/blog', [Blog::class, 'show']);
-Route::get('/faq', [Faq::class, 'show']); // faq view
-Route::get('/ictart', [Ictart::class, 'show']);
-Route::get('/dashboard', [Dashboard::class, 'show']);
-Route::get('/blogpostacc', [BlogPostAcc::class, 'show']);
-Route::get('/blogpostatos', [\App\Http\Controllers\BlogPostAtos::class, 'show']);
-Route::get('/blogpostdxc', [\App\Http\Controllers\BlogPostDxc::class, 'show']);
-Route::get('/blogpostexa', [\App\Http\Controllers\BlogPostExa::class, 'show']);
-Route::get('/blogpostgoogle', [\App\Http\Controllers\BlogPostGoogle::class, 'show']);
-Route::get('/blogpostoracle', [\App\Http\Controllers\BlogPostOracle::class, 'show']);
+Route::get('/{page}', [WelcomeController::class, 'show']);
+
 
